@@ -1,0 +1,8 @@
+<?php if (!is_single() && get_option('thestyle_postinfo1') <> '') { ?>
+	<p class="post-meta"><?php _e('Posted','TheStyle'); ?> <?php if (in_array('author', get_option('thestyle_postinfo1'))) { ?> <?php _e('by','TheStyle'); ?> <?php the_author_posts_link(); ?><?php }; ?><?php if (in_array('date', get_option('thestyle_postinfo1'))) { ?> <?php _e('on','TheStyle'); ?> <?php the_time(get_option('thestyle_date_format')) ?><?php }; ?><?php if (in_array('categories', get_option('thestyle_postinfo1'))) { ?> <?php _e('in','TheStyle'); ?> <?php the_category(', ') ?><?php }; ?><?php if (in_array('comments', get_option('thestyle_postinfo1'))) { ?> | <?php comments_popup_link(__('0 comments','TheStyle'), __('1 comment','TheStyle'), '% '.__('comments','TheStyle')); ?><?php }; ?></p>
+	<div class="clear"></div>
+<?php } elseif (is_single() && get_option('thestyle_postinfo2') <> '') { ?>
+	<p class="post-meta">
+		<?php _e('Posted','TheStyle'); ?> <?php if (in_array('author', get_option('thestyle_postinfo2'))) { ?> <?php _e('by','TheStyle'); ?> <?php the_author_posts_link(); ?><?php }; ?><?php if (in_array('date', get_option('thestyle_postinfo2'))) { ?> <?php _e('on','TheStyle'); ?> <?php the_time(get_option('thestyle_date_format')) ?><?php }; ?><?php if (in_array('categories', get_option('thestyle_postinfo2'))) { ?> <?php _e('in','TheStyle'); ?> <?php the_category(', ') ?><?php }; ?><?php if (in_array('comments', get_option('thestyle_postinfo2'))) { ?> | <?php comments_popup_link(__('0 comments','TheStyle'), __('1 comment','TheStyle'), '% '.__('comments','TheStyle')); ?><?php }; ?>
+	</p>
+<?php }; ?>
