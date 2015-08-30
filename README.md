@@ -26,3 +26,14 @@ A Wordpress t-shirt shop about billboard songs lyrics on tees.
 * T-shirt designs
 * SEO
 * Twitter bots
+
+### [49 Pages](49-pages)
+
+A script to get best price of PMBA books on Amazon
+
+#### Work
+
+* Database design
+* Scraper
+* SEO
+* Twitter bots
